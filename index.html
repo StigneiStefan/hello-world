@@ -5,14 +5,18 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   
 <head>
-//scripts go heare 
-
+  
+//scriptBegin 
+  
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-//end scripts go here
+<script>
+function myFunction() {
+  document.getElementById("D3Mo").innerHTML = "It's a Glitch!";
+}
+</script>
+//scriptEnd  
   
-//syle goes below
-  
+//styleBegin
 <style>
 input:focus {
   background-color: yellow;
@@ -29,9 +33,8 @@ input:focus {
 } 
   
 </style>
-  
-//addmore style above as needed
-  
+//styleEnd
+
 </head>
   
 <body>
@@ -41,6 +44,9 @@ input:focus {
   Last name: <input type="text" name="lname"><br>
   <input type="submit" value="Submit">
 </form>
+  
+<p id="D3Mo">Oh won't yuou you click me below??</p>
+<button type="button" onclick="myFunction()">Try it</button>
 
 <div class="w3-container">
   <h1>Stefan Stignei 73rd from the worst artist in the world!!!</h1>
