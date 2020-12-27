@@ -3,6 +3,233 @@
 <title>Stefan Babchin Stignei</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src='waxjs.js'></script>
+<script src='p5.js'></script>
+  
+<head>
+  
+  <img src="https://ipfs.pink.gg/ipfs/QmcsuC7Qy2P4ens7fFwdf7aV7EZBV8N2sFeeb4R3jpZxKc" alt="SteFxcLah" style="width:200px">  
+  <p><a href="https://wax.atomichub.io/market?collection_name=fundotxcutie">Purchase</a></p>
+  
+  <p><a href="https://etherscan.io/address/0xcd815dd7ebfd7eb46fc2858f040296b654cd6b81">https://etherscan.io/address/0xcd815dd7ebfd7eb46fc2858f040296b654cd6b81</a></p>
+  <p><a href="https://bloks.io/account/lovearthate1">https://bloks.io/account/lovearthate1</a></p>
+  <p><a href="https://wax.bloks.io/account/x4iqw.wam">https://wax.bloks.io/account/x4iqw.wam</a></p>
+  
+//scriptBegin 
+  
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+function myFunction() {
+  document.getElementById("D3Mo").innerHTML = "It's a Glitch!";
+}
+</script>
+
+  <div class="w3-container w3-grey">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
+<script>
+  function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  if (mouseIsPressed) {
+    fill(0);
+  } else {
+    fill(255);
+  }
+  ellipse(mouseX, mouseY, 80, 80);
+}
+</script>
+  </div>
+
+//scriptEnd  
+  
+//styleBegin
+<style>
+input:focus {
+  background-color: yellow;
+}
+  
+  h2 {
+    color: pink;
+    text-align: center;
+}
+
+  p {
+  color: pink;
+  text-align: right;
+} 
+  
+ body {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+  
+</style>
+//styleEnd
+
+</head>
+  
+<h1>Welcoem to design/h1>
+<p>follow stepbs by tstps</p>
+<p>edit this could code with ctrl paste</p>
+<img src="https://wax.atomichub.io/ipfs/QmVR46Pm9N7vXr2CySscrVo3qfkoAYo3th8hmo65xL3VwQ" alt="Avatar" style="width:200px">  
+  
+<body>
+  
+<form action="/action_page.php" method="get">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+</form>
+  
+<p id="D3Mo">Oh won't yuou you click me below??</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+<div class="w3-container">
+  <h1>Stefan Stignei 73rd from the worst artist in the world!!!</h1>
+  <p>https://wax.atomichub.io/market?collection_name=fundotxcutie</p>
+</div>
+  
+<p>Styled Font Awesome icons (size and color):</p>
+<i class="fas fa-cloud" style="font-size:24px;"></i>
+<i class="fas fa-cloud" style="font-size:36px;"></i>
+<i class="fas fa-cloud" style="font-size:48px;color:red;"></i>
+<i class="fas fa-cloud" style="font-size:60px;color:lightblue;"></i>
+
+<div class="w3-container w3-red">
+  <h2>Earth</h2>
+  <p> :) :) :) :) :) </p>
+</div>
+  
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<div class="w3-container w3-teal">
+  <h2>United States</h2>
+  <p> :) :) :) :) </p>
+</div>
+
+<div class="w3-container w3-yellow">
+  <h2>Oregon</h2>
+  <p> :) :) :) </p>
+</div>
+
+<div class="w3-container w3-gray">
+  <h2>Salem</h2>
+  <p> :) :) </p>
+</div>
+
+<div class="w3-container w3-purple">
+  <h2>SteFxcLah</h2>
+  <p> :) </p>
+  
+</div>
+
+<!DOCTYPE html>
+<html>
+<script src='waxjs.js'></script>
+
+<body>
+
+Below is a basic example of WaxJS functionality. To use this demo, click WAX Login (if you're not automatically logged in), then click Sign Transaction.
+
+<strong>Auto-login Feature</strong>
+<p>If your blockchain information displays below, you're automatically logged in to WaxJS, and you don't need to click WAX Login. This eliminates the need for multiple clicks and popups!</p>
+<p style="color:#ef9d47" id="autologin"></p>
+
+<strong>WAX Login</strong>
+<p>Use this if you're not automatically logged in. Note that if you are auto-logged in, clicking this does not open a popup and the userAccount is still returned.</p>
+<button id="login" onclick=login()>WAX Login</button>
+<p style="color:#ef9d47" id="loginresponse"></p>
+<p>&nbsp;</p>
+<strong>Sign Transaction</strong>
+<p>Click once you're logged in.</p>
+<button id="sign" onclick=sign()>Sign Transaction</button>
+<pre><code id="response">Transaction Response
+</code></pre>
+
+
+<script>
+    const wax = new waxjs.WaxJS('https://wax.greymass.com', null, null, false);
+
+    //automatically check for credentials
+    autoLogin();
+
+    //checks if autologin is available 
+    async function autoLogin() {
+        let isAutoLoginAvailable = await wax.isAutoLoginAvailable();
+        if (isAutoLoginAvailable) {
+            let userAccount = wax.userAccount;
+            let pubKeys = wax.pubKeys;
+            let str = 'AutoLogin enabled for account: ' + userAccount + '<br/>Active: ' + pubKeys[0] + '<br/>Owner: ' + pubKeys[1]
+            document.getElementById('autologin').insertAdjacentHTML('beforeend', str);
+        }
+        else {
+            document.getElementById('autologin').insertAdjacentHTML('beforeend', 'Not auto-logged in');
+        }
+    }
+
+    //normal login. Triggers a popup for non-whitelisted dapps
+    async function login() {
+        try {
+            //if autologged in, this simply returns the userAccount w/no popup
+            let userAccount = await wax.login();
+            let pubKeys = wax.pubKeys;
+            let str = 'Account: ' + userAccount + '<br/>Active: ' + pubKeys[0] + '<br/>Owner: ' + pubKeys[1]
+            document.getElementById('loginresponse').insertAdjacentHTML('beforeend', str);
+        } catch (e) {
+            document.getElementById('loginresponse').append(e.message);
+        }
+    } 
+
+    async function sign() {
+    if(!wax.api) {
+        return document.getElementById('response').append('* Login first *');
+    }
+
+    try {
+        const result = await wax.api.transact({
+        actions: [{
+            account: 'eosio',
+            name: 'delegatebw',
+            authorization: [{
+            actor: wax.userAccount,
+            permission: 'active',
+            }],
+            data: {
+            from: wax.userAccount,
+            receiver: wax.userAccount,
+            stake_net_quantity: '0.00000001 WAX',
+            stake_cpu_quantity: '0.00000000 WAX',
+            transfer: false,
+            memo: 'This is a WaxJS/Cloud Wallet Demo.'
+            },
+        }]
+        }, {
+        blocksBehind: 3,
+        expireSeconds: 30
+        });
+        document.getElementById('response').append(JSON.stringify(result, null, 2))
+    } catch(e) {
+        document.getElementById('response').append(e.message);
+    }
+    }
+
+</script>
+</body>
+</html>
+
+</body>
+</html> <html>
+<title>Stefan Babchin Stignei</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   
 <head>
   
