@@ -1,0 +1,13 @@
+var a
+function setup() {
+    createCanvas(400, 400).parent('between');
+  }
+  
+  function draw() {
+    if (mouseIsPressed) {
+      fill(0);
+    } else {
+      fill(255);
+    }
+    ellipse(mouseX, mouseY, 80, 80);
+  }
